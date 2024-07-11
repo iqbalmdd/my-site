@@ -1,10 +1,15 @@
 import React from "react";
+import backgroundImage from "../assets/hero-background.jpg"
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col items-center justify-center bg-gray-700 text-center"
+      className="h-screen flex flex-col items-center justify-center text-center" style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <h1 className="text-3xl sm:text-7xl font-code font-bold mb-4">
         Hello, I'm Iqbal
