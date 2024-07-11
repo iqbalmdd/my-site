@@ -1,13 +1,20 @@
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div class="flex justify-center text-5xl font-extrabold">
-        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
-          Iqbal Muhammad
-        </span>
-      </div>
+      <div>
       <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Education />
+      <Contact />
+    </div>
     </>
   );
 }
