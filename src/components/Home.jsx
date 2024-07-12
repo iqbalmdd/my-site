@@ -14,7 +14,7 @@ const Home = () => {
       }}
     >
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-950"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -23,7 +23,7 @@ const Home = () => {
         }}
       ></div>
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-950"
         style={{
           backgroundImage: `url(${grid})`,
           backgroundSize: "cover",

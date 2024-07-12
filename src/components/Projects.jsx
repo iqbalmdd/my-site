@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative z-2 bg-gray-700 flex flex-col sm:flex-row"
+      className="relative z-2 bg-gradient-to-b from-transparent via-indigo-950 flex flex-col md:flex-row items-center"
     >
       <div className="h-100% flex items-center justify-center sm:w-2/5">
         Ini detail project / Title
