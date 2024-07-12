@@ -33,9 +33,9 @@ const Navbar = () => {
               to="home"
               smooth={true}
               duration={500}
-              className="m-1 flex cursor-pointer items-center hover:bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 bg-opacity-50 h-8 w-8 rounded-full transition-all duration-100 ease-in-out "
+              className="m-1 flex cursor-pointer items-center hover:bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 bg-opacity-50 h-9 w-9 rounded-full transition-all duration-100 ease-in-out "
             >
-              <CiHome className="w-full z-10 scale-150" />
+              <CiHome className="w-full z-10 h-7 hover:scale-110" />
             </Link>
 
             <Link
