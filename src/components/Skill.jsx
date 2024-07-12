@@ -1,9 +1,9 @@
 import React from "react";
 
-const About = () => {
+const Skill = () => {
   return (
     <section
-      id="about"
+      id="skill"
       className="h-screen overflow-hidden w-full relative z-2 bg-gray-800 flex flex-col md:flex-row"
     >
       <div className="h-1/2 w-full flex items-center justify-center md:h-screen md:w-1/2">
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skill;
