@@ -8,12 +8,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="container relative z-2 bg-gray-700 flex flex-col md:flex-row"
+      className="relative z-2 bg-gray-700 flex flex-col sm:flex-row"
     >
-      <div className="h-100% flex items-center justify-center md:w-2/5">
+      <div className="h-100% flex items-center justify-center sm:w-2/5">
         Ini detail project / Title
       </div>
-      <div className="grid grid-cols-1 p-4 align-middle justify-items-center md:grid-cols-2 md:w-3/5">
+      <div className="grid grid-cols-1 p-4 align-middle justify-items-center sm:grid-cols-1 sm:w-3/5 lg:grid-cols-2">
         <div
           className="m-2 block relative p-1 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
           style={{ backgroundImage: `url(${card1})` }}

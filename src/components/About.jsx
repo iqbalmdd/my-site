@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen container relative z-2 bg-gray-800 flex flex-col md:flex-row"
+      className="h-screen overflow-hidden w-full relative z-2 bg-gray-800 flex flex-col md:flex-row"
     >
-      <div className="h-1/2 flex items-center justify-center md:h-screen md:w-1/2">
+      <div className="h-1/2 w-full flex items-center justify-center md:h-screen md:w-1/2">
         Backend
       </div>
-      <div className="h-1/2 flex items-center justify-center md:h-screen md:w-1/2">
+      <div className="h-1/2 w-full flex items-center justify-center md:h-screen md:w-1/2">
         Frontend
       </div>
     </section>
