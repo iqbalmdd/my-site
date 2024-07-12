@@ -4,9 +4,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen flex items-center justify-center bg-gray-800"
+      className="h-screen container relative z-2 bg-gray-800 flex flex-col md:flex-row"
     >
-      <h1 className="text-3xl">About Section</h1>
+      <div className="h-1/2 flex items-center justify-center md:h-screen md:w-1/2">
+        Backend
+      </div>
+      <div className="h-1/2 flex items-center justify-center md:h-screen md:w-1/2">
+        Frontend
+      </div>
     </section>
   );
 };
