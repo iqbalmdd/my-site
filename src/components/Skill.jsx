@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaReact, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { TbBrandCSharp } from "react-icons/tb";
+import { SiTailwindcss, SiMysql, SiPostgresql } from "react-icons/si";
+import { BsBootstrap } from "react-icons/bs";
+import { IoLogoCss3 } from "react-icons/io";
 
 const Skill = () => {
   const [openAccordionBE, setOpenAccordionBE] = useState(null);
@@ -16,7 +19,9 @@ const Skill = () => {
   const toggleAccordionFE = (id) => {
     setOpenAccordionFE((prev) => (prev === id ? null : id));
   };
-  {/* Backend */}
+  {
+    /* Backend */
+  }
   useEffect(() => {
     accordionRefsBE.current.forEach((ref, index) => {
       if (ref) {
@@ -25,7 +30,9 @@ const Skill = () => {
       }
     });
   }, [openAccordionBE]);
-  {/* Frontend */}
+  {
+    /* Frontend */
+  }
   useEffect(() => {
     accordionRefsFE.current.forEach((ref, index) => {
       if (ref) {
@@ -57,27 +64,55 @@ const Skill = () => {
       content:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
     },
+    {
+      id: 4,
+      title: "MySQL",
+      icon: <SiMysql />,
+      content:
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+    },
+    {
+      id: 5,
+      title: "PostgreSQL",
+      icon: <SiPostgresql />,
+      content:
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+    },
   ];
 
   const skillsFE = [
     {
       id: 1,
       title: "React",
-      icon: <FaJava />,
+      icon: <FaReact />,
       content:
         "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
     },
     {
       id: 2,
-      title: "React Redux",
-      icon: <TbBrandJavascript />,
+      title: "Tailwind",
+      icon: <SiTailwindcss />,
       content:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
     },
     {
       id: 3,
-      title: "React Router",
-      icon: <TbBrandCSharp />,
+      title: "Bootstrap",
+      icon: <BsBootstrap />,
+      content:
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+    },
+    {
+      id: 4,
+      title: "HTML",
+      icon: <FaHtml5 />,
+      content:
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+    },
+    {
+      id: 5,
+      title: "CSS",
+      icon: <IoLogoCss3 />,
       content:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
     },
@@ -129,9 +164,7 @@ const Skill = () => {
                 }}
               >
                 <div className="p-5">
-                  <p className="mb-2 w-full text-gray-400">
-                    {item.content}
-                  </p>
+                  <p className="mb-2 w-full text-gray-400">{item.content}</p>
                 </div>
               </div>
             </React.Fragment>
@@ -179,9 +212,7 @@ const Skill = () => {
                 }}
               >
                 <div className="p-5">
-                  <p className="mb-2 w-full text-gray-400">
-                    {item.content}
-                  </p>
+                  <p className="mb-2 w-full text-gray-400">{item.content}</p>
                 </div>
               </div>
             </React.Fragment>
