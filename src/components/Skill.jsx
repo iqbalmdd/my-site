@@ -10,7 +10,7 @@ import check from "../assets/check.svg";
 
 const Skill = () => {
   const [openAccordionBE, setOpenAccordionBE] = useState(0);
-  const [openAccordionFE, setOpenAccordionFE] = useState(null);
+  const [openAccordionFE, setOpenAccordionFE] = useState(0);
   const accordionRefsBE = useRef([]);
   const accordionRefsFE = useRef([]);
 
@@ -114,38 +114,69 @@ const Skill = () => {
       id: 1,
       title: "React",
       icon: <FaReact />,
-      content:
-        "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+      content: [
+        { id: 1, text: "State & Hooks" },
+        { id: 2, text: "Redux" },
+        { id: 3, text: "React Router" },
+        { id: 4, text: "Axios" },
+        { id: 5, text: "Component Lifecycle" },
+        { id: 6, text: "Context API" },
+      ],
     },
     {
       id: 2,
       title: "Tailwind",
       icon: <SiTailwindcss />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Utility-First Design" },
+        { id: 2, text: "Responsive Design" },
+        { id: 3, text: "Custom Themes" },
+        { id: 4, text: "Plugins" },
+        { id: 5, text: "Purging Unused CSS" },
+        { id: 6, text: "Flexbox & Grid" },
+      ],
     },
     {
       id: 3,
       title: "Bootstrap",
       icon: <BsBootstrap />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Grid System" },
+        { id: 2, text: "Responsive Utilities" },
+        { id: 3, text: "Custom Components" },
+        { id: 4, text: "Themes" },
+        { id: 5, text: "JavaScript Plugins" },
+        { id: 6, text: "Form Controls" },
+      ],
     },
     {
       id: 4,
       title: "HTML",
       icon: <FaHtml5 />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Semantic HTML" },
+        { id: 2, text: "Forms and Validation" },
+        { id: 3, text: "Canvas and SVG" },
+        { id: 4, text: "Local Storage" },
+        { id: 5, text: "Web Accessibility" },
+        { id: 6, text: "SEO Best Practices" },
+      ],
     },
     {
       id: 5,
       title: "CSS",
       icon: <IoLogoCss3 />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Flexbox" },
+        { id: 2, text: "Animations and Transitions" },
+        { id: 3, text: "Grid Layout" },
+        { id: 4, text: "Responsive Design" },
+        { id: 5, text: "CSS Variables" },
+        { id: 6, text: "Preprocessors (Sass, LESS)" },
+      ],
     },
   ];
+  
 
   return (
     <section
@@ -220,7 +251,7 @@ const Skill = () => {
       </div>
       {/* Frontend */}
       <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-auto md:w-1/2">
-        <h1 className="mt-5 font-code font-semibold text-4xl">Frontend</h1>
+        <h1 className="mt-5 font-code font-semibold text-4xl">FrontEnd</h1>
         <ul className="mt-11 sm:ml-52 flex flex-col w-full items-start">
           {skillsFE.map((item, index) => (
             <React.Fragment key={item.id}>
@@ -264,8 +295,20 @@ const Skill = () => {
                       : "0px",
                 }}
               >
-                <div className="p-5 w-5/6 sm:w-full">
-                  <p className="mb-2 w-full text-gray-400">{item.content}</p>
+                <div className="p-5 -mt-6 md:grid md:grid-cols-2 ml-9 w-9/12 sm:w-full">
+                  {item.content.map((itemContent) => (
+                    <div
+                      key={itemContent.id}
+                      className="my-2 -ml-2 flex items-center"
+                    >
+                      <img
+                        src={check}
+                        className="w-4 h-4 mr-2"
+                        alt="check icon"
+                      />
+                      <p className="ml-2">{itemContent.text}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </React.Fragment>
