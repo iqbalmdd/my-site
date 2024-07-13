@@ -58,29 +58,49 @@ const Skill = () => {
       id: 2,
       title: "JavaScript",
       icon: <TbBrandJavascript />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
+        { id: 2, text: "Adipisicing elit. Dolor nulla." },
+        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
+        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
+        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+      ],
     },
     {
       id: 3,
       title: "C#",
       icon: <TbBrandCSharp />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
+        { id: 2, text: "Adipisicing elit. Dolor nulla." },
+        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
+        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
+        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+      ],
     },
     {
       id: 4,
       title: "MySQL",
       icon: <SiMysql />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
+        { id: 2, text: "Adipisicing elit. Dolor nulla." },
+        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
+        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
+        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+      ],
     },
     {
       id: 5,
       title: "PostgreSQL",
       icon: <SiPostgresql />,
-      content:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nulla, sint nobis beatae corrupti placeat assumenda deleniti nisi adipisci reprehenderit possimus, nostrum autem rerum aspernatur pariatur reiciendis sed mollitia? Quae architecto nobis expedita distinctio placeat, officiis, deserunt inventore asperiores minus voluptatum ipsa temporibus, incidunt dolorum nam ut numquam hic quas quos eligendi aut. Inventore fugiat excepturi facilis, totam sapiente iusto aliquid ipsum facere voluptatibus earum magnam nostrum fuga dolorum distinctio veniam consequatur deserunt unde amet laudantium alias commodi rerum, libero sunt. Ea nemo eius molestias laudantium nulla enim neque debitis error, harum, adipisci vitae, commodi quo iste explicabo! Quasi, quidem? ",
+      content: [
+        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
+        { id: 2, text: "Adipisicing elit. Dolor nulla." },
+        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
+        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
+        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+      ],
     },
   ];
 
@@ -173,10 +193,12 @@ const Skill = () => {
                       : "0px",
                 }}
               >
-                {/* Ini masih Error */}
-                <div className="p-5 w-5/6 sm:w-full">
+                <div className="p-5 -mt-6 grid grid-cols-2 ml-16 w-5/6 sm:w-full">
                   {item.content.map((itemContent) => (
-                    <div key={itemContent.id} className="flex items-center">
+                    <div
+                      key={itemContent.id}
+                      className="my-1 flex items-center"
+                    >
                       <img
                         src={check}
                         className="w-4 h-4 mr-2"
@@ -186,7 +208,6 @@ const Skill = () => {
                     </div>
                   ))}
                 </div>
-                {/* sampai sini karna contentnya salah mapp */}
               </div>
             </React.Fragment>
           ))}
