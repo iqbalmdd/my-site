@@ -32,7 +32,7 @@ const Projects = () => {
           style={{ backgroundImage: `url(${card2})` }}
         >
           <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 1</h1>
+            <h1 className="text-3xl">Projects Section 2</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio neque quidem, sed quibusdam dolorem minima nostrum
@@ -45,7 +45,7 @@ const Projects = () => {
           style={{ backgroundImage: `url(${card3})` }}
         >
           <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 1</h1>
+            <h1 className="text-3xl">Projects Section 3</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio neque quidem, sed quibusdam dolorem minima nostrum
@@ -58,7 +58,7 @@ const Projects = () => {
           style={{ backgroundImage: `url(${card4})` }}
         >
           <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 1</h1>
+            <h1 className="text-3xl">Projects Section 4</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio neque quidem, sed quibusdam dolorem minima nostrum

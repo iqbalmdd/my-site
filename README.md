@@ -1,8 +1,18 @@
-# React + Vite
+# Skills
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Backend
+Java        |   Springboot
+Javascript  |   Node JS
+C#          |   .Net
+MySQL
+PostgreSQL
 
-Currently, two official plugins are available:
+Authentication using JWT, Validation, Sorting, Common Respond, Paging
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Frontend
+HTML
+CSS
+React JS    | Bootstrap, Tailwind
+- React Router
+- React Redux
+- React Hooks
