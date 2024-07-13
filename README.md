@@ -7,7 +7,7 @@ C#          |   .Net
 MySQL
 PostgreSQL
 
-Authentication using JWT, Validation, Sorting, Common Respond, Paging
+Authentication using JWT, Validation, Sorting, Common Respond, Paging, 
 
 ## Frontend
 HTML

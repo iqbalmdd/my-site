@@ -6,6 +6,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { SiTailwindcss, SiMysql, SiPostgresql } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { IoLogoCss3 } from "react-icons/io";
+import check from "../assets/check.svg";
 
 const Skill = () => {
   const [openAccordionBE, setOpenAccordionBE] = useState(0);
@@ -19,9 +20,8 @@ const Skill = () => {
   const toggleAccordionFE = (id) => {
     setOpenAccordionFE((prev) => (prev === id ? null : id));
   };
-  {
-    /* Backend */
-  }
+
+  /* Backend */
   useEffect(() => {
     accordionRefsBE.current.forEach((ref, index) => {
       if (ref) {
@@ -30,9 +30,8 @@ const Skill = () => {
       }
     });
   }, [openAccordionBE]);
-  {
-    /* Frontend */
-  }
+
+  /* Frontend */
   useEffect(() => {
     accordionRefsFE.current.forEach((ref, index) => {
       if (ref) {
@@ -47,8 +46,13 @@ const Skill = () => {
       id: 1,
       title: "Java",
       icon: <FaJava />,
-      content:
-        "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+      content: [
+        { id: 1, text: "Authentication using JWT" },
+        { id: 2, text: "Validation" },
+        { id: 3, text: "Sorting" },
+        { id: 4, text: "Paging" },
+        { id: 5, text: "Common Response" },
+      ],
     },
     {
       id: 2,
@@ -141,7 +145,13 @@ const Skill = () => {
                       className: "w-full h-full",
                     })}
                   </div>
-                  <span className="ml-8 text-xl font-grotesk">
+                  <span
+                    className={`ml-8 text-xl font-grotesk ${
+                      openAccordionBE === index
+                        ? "text-pink-500 font-semibold"
+                        : ""
+                    }`}
+                  >
                     {item.title}
                   </span>
                 </div>
@@ -163,9 +173,20 @@ const Skill = () => {
                       : "0px",
                 }}
               >
+                {/* Ini masih Error */}
                 <div className="p-5 w-5/6 sm:w-full">
-                  <p className="mb-2 w-full text-gray-400">{item.content}</p>
+                  {item.content.map((itemContent) => (
+                    <div key={itemContent.id} className="flex items-center">
+                      <img
+                        src={check}
+                        className="w-4 h-4 mr-2"
+                        alt="check icon"
+                      />
+                      <p className="ml-2">{itemContent.text}</p>
+                    </div>
+                  ))}
                 </div>
+                {/* sampai sini karna contentnya salah mapp */}
               </div>
             </React.Fragment>
           ))}
@@ -189,7 +210,13 @@ const Skill = () => {
                       className: "w-full h-full",
                     })}
                   </div>
-                  <span className="ml-8 text-xl font-grotesk">
+                  <span
+                    className={`ml-8 text-xl font-grotesk ${
+                      openAccordionFE === index
+                        ? "text-pink-500 font-semibold"
+                        : ""
+                    }`}
+                  >
                     {item.title}
                   </span>
                 </div>
