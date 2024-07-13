@@ -8,7 +8,7 @@ import { BsBootstrap } from "react-icons/bs";
 import { IoLogoCss3 } from "react-icons/io";
 
 const Skill = () => {
-  const [openAccordionBE, setOpenAccordionBE] = useState(null);
+  const [openAccordionBE, setOpenAccordionBE] = useState(0);
   const [openAccordionFE, setOpenAccordionFE] = useState(null);
   const accordionRefsBE = useRef([]);
   const accordionRefsFE = useRef([]);
