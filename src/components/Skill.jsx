@@ -121,10 +121,10 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="h-auto p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
+      className="h-auto mb-28 p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
     >
       {/* Backend */}
-      <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-screen md:w-1/2">
+      <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-auto md:w-1/2">
         <h1 className="mt-5 font-code font-semibold text-4xl">Backend</h1>
         <ul className="mt-11 sm:ml-52 flex flex-col w-full items-start">
           {skillsBE.map((item, index) => (
@@ -154,7 +154,7 @@ const Skill = () => {
               <div
                 id={`accordion-color-body-${item.id}`}
                 ref={(el) => (accordionRefsBE.current[index] = el)}
-                className="overflow-hidden transition-all duration-500 ease-in-out w-2/3"
+                className="overflow-hidden transition-all duration-500 ease-in-out w-screen sm:w-2/3"
                 aria-labelledby={`accordion-color-heading-${item.id}`}
                 style={{
                   maxHeight:
@@ -163,7 +163,7 @@ const Skill = () => {
                       : "0px",
                 }}
               >
-                <div className="p-5">
+                <div className="p-5 w-5/6 sm:w-full">
                   <p className="mb-2 w-full text-gray-400">{item.content}</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ const Skill = () => {
         </ul>
       </div>
       {/* Frontend */}
-      <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-screen md:w-1/2">
+      <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-auto md:w-1/2">
         <h1 className="mt-5 font-code font-semibold text-4xl">Frontend</h1>
         <ul className="mt-11 sm:ml-52 flex flex-col w-full items-start">
           {skillsFE.map((item, index) => (
@@ -202,7 +202,7 @@ const Skill = () => {
               <div
                 id={`accordion-color-body-${item.id}`}
                 ref={(el) => (accordionRefsFE.current[index] = el)}
-                className="overflow-hidden transition-all duration-500 ease-in-out w-2/3"
+                className="overflow-hidden transition-all duration-500 ease-in-out w-screen sm:w-2/3"
                 aria-labelledby={`accordion-color-heading-${item.id}`}
                 style={{
                   maxHeight:
@@ -211,7 +211,7 @@ const Skill = () => {
                       : "0px",
                 }}
               >
-                <div className="p-5">
+                <div className="p-5 w-5/6 sm:w-full">
                   <p className="mb-2 w-full text-gray-400">{item.content}</p>
                 </div>
               </div>
