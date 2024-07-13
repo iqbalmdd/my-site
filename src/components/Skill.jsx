@@ -47,11 +47,12 @@ const Skill = () => {
       title: "Java",
       icon: <FaJava />,
       content: [
-        { id: 1, text: "Authentication using JWT" },
-        { id: 2, text: "Validation" },
-        { id: 3, text: "Sorting" },
-        { id: 4, text: "Paging" },
-        { id: 5, text: "Common Response" },
+        { id: 1, text: "RESTful API" },
+        { id: 2, text: "Authentication using JWT" },
+        { id: 3, text: "Validation" },
+        { id: 4, text: "Sorting" },
+        { id: 5, text: "Paging" },
+        { id: 6, text: "Common Response" },
       ],
     },
     {
@@ -59,11 +60,12 @@ const Skill = () => {
       title: "JavaScript",
       icon: <TbBrandJavascript />,
       content: [
-        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
-        { id: 2, text: "Adipisicing elit. Dolor nulla." },
-        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
-        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
-        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+        { id: 1, text: "RESTful API" },
+        { id: 2, text: "Authentication using JWT" },
+        { id: 3, text: "Validation" },
+        { id: 4, text: "Sorting" },
+        { id: 5, text: "Paging" },
+        { id: 6, text: "Common Response" },
       ],
     },
     {
@@ -71,11 +73,12 @@ const Skill = () => {
       title: "C#",
       icon: <TbBrandCSharp />,
       content: [
-        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
-        { id: 2, text: "Adipisicing elit. Dolor nulla." },
-        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
-        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
-        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+        { id: 1, text: "RESTful API" },
+        { id: 2, text: "Authentication using JWT" },
+        { id: 3, text: "Validation" },
+        { id: 4, text: "Sorting" },
+        { id: 5, text: "Paging" },
+        { id: 6, text: "Common Response" },
       ],
     },
     {
@@ -83,11 +86,12 @@ const Skill = () => {
       title: "MySQL",
       icon: <SiMysql />,
       content: [
-        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
-        { id: 2, text: "Adipisicing elit. Dolor nulla." },
-        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
-        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
-        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+        { id: 1, text: "Nested Queries" },
+        { id: 2, text: "Complex Join Tables" },
+        { id: 3, text: "Data Validation" },
+        { id: 4, text: "Sorting and Filtering Data" },
+        { id: 5, text: "Performance Optimization" },
+        { id: 6, text: "Database Indexing" },
       ],
     },
     {
@@ -95,11 +99,12 @@ const Skill = () => {
       title: "PostgreSQL",
       icon: <SiPostgresql />,
       content: [
-        { id: 1, text: "Lorem ipsum dolor sit amet consectetur." },
-        { id: 2, text: "Adipisicing elit. Dolor nulla." },
-        { id: 3, text: "Sint nobis beatae corrupti placeat assumenda." },
-        { id: 4, text: "Deleniti nisi adipisci reprehenderit possimus." },
-        { id: 5, text: "Rerum aspernatur pariatur reiciendis sed mollitia." },
+        { id: 1, text: "Nested Queries" },
+        { id: 2, text: "Complex Join Tables" },
+        { id: 3, text: "Data Validation" },
+        { id: 4, text: "Sorting and Filtering Data" },
+        { id: 5, text: "Performance Optimization" },
+        { id: 6, text: "Database Indexing" },
       ],
     },
   ];
@@ -197,7 +202,7 @@ const Skill = () => {
                   {item.content.map((itemContent) => (
                     <div
                       key={itemContent.id}
-                      className="my-2 flex items-center"
+                      className="my-2 -ml-2 flex items-center"
                     >
                       <img
                         src={check}
