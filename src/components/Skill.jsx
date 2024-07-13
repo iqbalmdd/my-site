@@ -21,7 +21,7 @@ const Skill = () => {
     });
   }, [openAccordion]);
 
-  const icons = [
+  const skills = [
     {
       id: 1,
       title: "Java",
@@ -48,15 +48,15 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="h-screen p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
+      className="h-auto p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
     >
       <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-screen md:w-1/2">
         <h1 className="mt-5 font-code font-semibold text-4xl">Backend</h1>
-        <ul className="mt-11 ml-52 flex flex-col w-full items-start">
-          {icons.map((item, index) => (
+        <ul className="mt-11 sm:ml-52 flex flex-col w-full items-start">
+          {skills.map((item, index) => (
             <React.Fragment key={item.id}>
               <li
-                className="my-2 flex w-2/3 items-center justify-between cursor-pointer"
+                className="my-2 w-full flex sm:w-2/3 items-center justify-between cursor-pointer"
                 onClick={() => toggleAccordion(index)}
                 aria-expanded={openAccordion === index}
                 aria-controls={`accordion-color-body-${item.id}`}
@@ -90,7 +90,7 @@ const Skill = () => {
                 }}
               >
                 <div className="p-5">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  <p className="mb-2 w-full text-gray-400">
                     {item.content}
                   </p>
                 </div>
