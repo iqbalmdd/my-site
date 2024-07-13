@@ -193,11 +193,11 @@ const Skill = () => {
                       : "0px",
                 }}
               >
-                <div className="p-5 -mt-6 grid grid-cols-2 ml-16 w-5/6 sm:w-full">
+                <div className="p-5 -mt-6 md:grid md:grid-cols-2 ml-9 w-9/12 sm:w-full">
                   {item.content.map((itemContent) => (
                     <div
                       key={itemContent.id}
-                      className="my-1 flex items-center"
+                      className="my-2 flex items-center"
                     >
                       <img
                         src={check}
