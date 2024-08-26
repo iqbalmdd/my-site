@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaJava, FaReact, FaHtml5 } from "react-icons/fa";
+import { FaJava, FaReact, FaHtml5, FaGitAlt, FaDocker } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { TbBrandCSharp } from "react-icons/tb";
@@ -107,12 +107,38 @@ const Skill = () => {
         { id: 6, text: "Database Indexing" },
       ],
     },
+    {
+      id: 6,
+      title: "Git",
+      icon: <FaGitAlt />,
+      content: [
+        { id: 1, text: "Branching and Merging" },
+        { id: 2, text: "Commit History" },
+        { id: 3, text: "Pull Requests" },
+        { id: 4, text: "Conflict Resolution" },
+        { id: 5, text: "Rebasing" },
+        { id: 6, text: "Remote Repository Management" },
+      ],
+    },
+    {
+      id: 7,
+      title: "Docker",
+      icon: <FaDocker />,
+      content: [
+        { id: 1, text: "Containerization" },
+        { id: 2, text: "Docker Compose" },
+        { id: 3, text: "Dockerfile Creation" },
+        { id: 4, text: "Image Management" },
+        { id: 5, text: "Volume Management" },
+        { id: 6, text: "Networking" },
+      ],
+    },
   ];
 
   const skillsFE = [
     {
       id: 1,
-      title: "React",
+      title: "React - JS & Native",
       icon: <FaReact />,
       content: [
         { id: 1, text: "State & Hooks" },
@@ -176,12 +202,11 @@ const Skill = () => {
       ],
     },
   ];
-  
 
   return (
     <section
       id="skill"
-      className="h-auto mb-28 p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
+      className="h-auto mb-20 p-8 overflow-hidden w-full relative z-2 bg-gradient-to-b from-black via-indigo-950 flex flex-col md:flex-row"
     >
       {/* Backend */}
       <div className="h-1/2 w-full flex flex-col items-center justify-start md:h-auto md:w-1/2">

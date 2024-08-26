@@ -8,8 +8,8 @@ import { FaCode } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <>
-      <div className="scale-75 fixed bottom-0 w-full flex justify-center z-50 sm:scale-100">
-        <div className="m-10 flex items-center justify-evenly rounded-full w-auto h-auto bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 p-[1.5px] hover:scale-125 transition-all duration-100 ease-in-out">
+      <div className="scale-75 fixed bottom-0 left-1/2 transform -translate-x-1/2 flex justify-center z-50 sm:scale-100">
+        <div className="my-10 flex items-center justify-evenly rounded-full w-auto h-auto bg-gradient-to-tr from-purple-400 via-pink-500 to-red-500 p-[1.5px] hover:scale-125 transition-all duration-100 ease-in-out">
           <div className="bg-gray-900 h-full w-full rounded-full flex justify-center items-center hover:scale-125 transition-all duration-100 ease-in-out">
             <Link
               to="skill"
