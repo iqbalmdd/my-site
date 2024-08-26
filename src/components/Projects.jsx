@@ -13,13 +13,13 @@ const Projects = () => {
       id="projects"
       className="relative z-2 bg-gradient-to-b from-transparent via-indigo-950 flex flex-col md:flex-row items-center"
     >
-      <div className="grid grid-cols-1 p-4 align-middle justify-items-center lg:grid-cols-2">
+      <div className="grid grid-cols-1 w-full p-4 align-middle justify-items-center xl:grid-cols-2">
         {/* Projects 1 */}
-        <div className="flex flex-col md:flex-row justify-between bg-green-900">
-          <div className="flex flex-wrap items-center justify-center bg-green-300 w-full h-auto overflow-hidden">
-          <img src={phone1} className="h-[15rem] lg:h-[20rem]" />
-          <img src={phone2} className="h-[15rem] lg:h-[20rem]" />
-          <img src={phone3} className="h-[15rem] lg:h-[20rem]" />
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-wrap items-center justify-center w-full h-auto overflow-hidden">
+            <img src={phone1} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone2} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone3} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
           </div>
           <div
             className="m-2 relative p-1 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
@@ -28,54 +28,83 @@ const Projects = () => {
             <div className="relative z-2 -mb-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
               <h1 className="text-3xl mb-2">Smart Laundry</h1>
               <p>
-              Smart Laundry is an application designed for laundry business owners to streamline and automate their operations. 
-              It allows users to maintain financial records, manage customers, track orders, schedule pickups and deliveries, 
-              manage inventory, and generate detailed reports.
+                Smart Laundry is an application designed for laundry business
+                owners to streamline and automate their operations. It allows
+                users to maintain financial records, manage customers, track
+                orders, schedule pickups and deliveries, manage inventory, and
+                generate detailed reports.
               </p>
             </div>
           </div>
         </div>
-        
+
         {/* Projects 2 */}
-        <div
-          className="m-2 block relative p-5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-          style={{ backgroundImage: `url(${card2})` }}
-        >
-          <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 2</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio neque quidem, sed quibusdam dolorem minima nostrum
-              recusandae? Sequi, fugit blanditiis.
-            </p>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-wrap items-center justify-center w-full h-auto overflow-hidden">
+            <img src={phone1} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone2} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone3} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+          </div>
+          <div
+            className="m-2 relative p-1 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+            style={{ backgroundImage: `url(${card1})` }}
+          >
+            <div className="relative z-2 -mb-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <h1 className="text-3xl mb-2">Smart Laundry</h1>
+              <p>
+                Smart Laundry is an application designed for laundry business
+                owners to streamline and automate their operations. It allows
+                users to maintain financial records, manage customers, track
+                orders, schedule pickups and deliveries, manage inventory, and
+                generate detailed reports.
+              </p>
+            </div>
           </div>
         </div>
         {/* Projects 3 */}
-        <div
-          className="m-2 block relative p-5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-          style={{ backgroundImage: `url(${card3})` }}
-        >
-          <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 3</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio neque quidem, sed quibusdam dolorem minima nostrum
-              recusandae? Sequi, fugit blanditiis.
-            </p>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-wrap items-center justify-center w-full h-auto overflow-hidden">
+            <img src={phone1} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone2} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone3} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+          </div>
+          <div
+            className="m-2 relative p-1 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+            style={{ backgroundImage: `url(${card1})` }}
+          >
+            <div className="relative z-2 -mb-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <h1 className="text-3xl mb-2">Smart Laundry</h1>
+              <p>
+                Smart Laundry is an application designed for laundry business
+                owners to streamline and automate their operations. It allows
+                users to maintain financial records, manage customers, track
+                orders, schedule pickups and deliveries, manage inventory, and
+                generate detailed reports.
+              </p>
+            </div>
           </div>
         </div>
         {/* Projects 4 */}
-        <div
-          className="m-2 block relative p-5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-          style={{ backgroundImage: `url(${card4})` }}
-        >
-          <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-            <h1 className="text-3xl">Projects Section 4</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio neque quidem, sed quibusdam dolorem minima nostrum
-              recusandae? Sequi, fugit blanditiis.
-            </p>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-wrap items-center justify-center w-full h-auto overflow-hidden">
+            <img src={phone1} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone2} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+            <img src={phone3} className="h-[15rem] lg:h-[20rem] xl:h-[16rem]" />
+          </div>
+          <div
+            className="m-2 relative p-1 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+            style={{ backgroundImage: `url(${card1})` }}
+          >
+            <div className="relative z-2 -mb-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <h1 className="text-3xl mb-2">Smart Laundry</h1>
+              <p>
+                Smart Laundry is an application designed for laundry business
+                owners to streamline and automate their operations. It allows
+                users to maintain financial records, manage customers, track
+                orders, schedule pickups and deliveries, manage inventory, and
+                generate detailed reports.
+              </p>
+            </div>
           </div>
         </div>
       </div>
